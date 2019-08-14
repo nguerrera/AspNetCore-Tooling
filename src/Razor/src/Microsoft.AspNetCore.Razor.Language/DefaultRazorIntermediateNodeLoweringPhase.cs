@@ -1278,7 +1278,7 @@ namespace Microsoft.AspNetCore.Razor.Language
                     Source = BuildSourceSpanFromNode(node),
                 });
             }
-            
+
             // Example
             // <input checked="hello-world `@false`"/>
             //  Prefix= (space)

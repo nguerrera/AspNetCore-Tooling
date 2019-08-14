@@ -319,7 +319,7 @@ namespace Microsoft.AspNetCore.Razor.Language.CodeGeneration
 
         public static CodeWriter WriteMethodInvocation(this CodeWriter writer, string methodName, bool endLine, params string[] parameters)
         {
-            return 
+            return
                 WriteStartMethodInvocation(writer, methodName)
                 .Write(string.Join(", ", parameters))
                 .WriteEndMethodInvocation(endLine);
@@ -627,7 +627,7 @@ namespace Microsoft.AspNetCore.Razor.Language.CodeGeneration
             private readonly string _sourceFilePath;
 
             public LinePragmaWriter(
-                CodeWriter writer, 
+                CodeWriter writer,
                 SourceSpan span,
                 CodeRenderingContext context)
             {
